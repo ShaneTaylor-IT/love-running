@@ -192,6 +192,15 @@ hr {
 #times h3 {
     color:#afafaf;
 }
+/* Gallery page */
+#photos img {
+    width:100%;
+    line-height:1em;
+}
+
+#photos {
+    line-height:0;
+}
 
 /* Footer */
 #social-networks {
@@ -207,6 +216,16 @@ hr {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* Media query: large or landscape phones (768px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+
+    }
+}
+
 
 /* Media query: tablets and above (768px and up) */
 @media screen and (min-width: 768px) {
@@ -266,6 +285,11 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count:3;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -280,6 +304,11 @@ hr {
     #benefits {
         display: flex;
         flex-direction: row;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count:4;
     }
 
     #benefits > div {
